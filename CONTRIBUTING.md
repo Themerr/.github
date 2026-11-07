@@ -1,0 +1,260 @@
+# Contributing
+
+## Guidelines
+Thank you for considering contributing to our open source project! We welcome all contributions, whether you're fixing
+a bug, improving documentation, or adding a new feature.
+
+Before you start, please take a moment to read our code of conduct and community guidelines, which outline our
+expectations for respectful and inclusive behavior.
+
+### Getting Started
+1. Fork the repository on GitHub to create a copy of the project.
+2. Create a new branch for your changes. This will help if you need to create multiple pull requests, which may be
+   out of scope from each other.
+3. Make your changes, be sure to follow our code style guidelines and test your code thoroughly.
+4. Document your code changes to the best of your ability. This will help other contributors understand the
+   purpose and functionality of your changes.
+5. You can also add missing documentation to any related code. Documentation is important for the maintainability
+   of our projects.
+6. When you're ready, submit a pull request using the template provided.
+
+### Pull Requests
+
+#### Creating a Pull Request
+To help us review your changes quickly and accurately, please follow these guidelines when submitting a pull request:
+
+1. Submit your pull request against the default branch. The pull request title should follow
+   [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) guidelines. If we accept the PR, it will
+   be squashed and merged with the pull request title and number as the commit message.
+2. Complete the pull request template, including any relevant details about your changes and any associated issues.
+
+   * Use the official template, including when AI tools help write your PR description.
+   * Leave the template comments in place. They are helpful when editing the PR description.
+
+     ```markdown
+     <!-- This is a comment -->
+     ```
+
+   * Do not delete any sections of the template, even if they do not apply to your changes.
+   * Link any issues or discussions that are resolved by your changes.
+
+     ```markdown
+     - Closes #123
+     - Fixes #456
+     - Resolves #789
+     ```
+
+   * Complete the checklists. It is not required to check everything, only check the items that apply to your changes.
+
+     ```markdown
+     - [x] This is a complete item
+     - [ ] This is an incomplete item
+     ```
+
+3. Be prepared to address any feedback or questions that may arise during the code review process.
+
+> [!NOTE]
+> It is important to note that pull requests should generally address a single issue or feature to make it
+> easier to review and test the code. In some cases, exceptions may be made. For example, if you find a typo or
+> formatting error in a file being modified, it may be acceptable to fix it in the same pull request as a drive-by
+> fix. However, if the pull request is already large, it may be better to create a separate pull request for the
+> secondary fixes.
+
+#### Review Process
+Pull requests may be reviewed by project maintainers, AI agents, or both to ensure code quality and consistency with
+project standards. AI agents help us keep up with the high volume of incoming pull requests. Maintainers remain
+responsible for merge decisions.
+
+Address valid feedback from AI agents as you would feedback from a human reviewer. If a finding is incorrect or does
+not apply, explain why with relevant code, tests, or other evidence. AI reviews can make mistakes, so use your
+engineering judgment when responding.
+
+The changes requested may be minor, such as fixing a typo, adjusting formatting, or adding a comment. These may seem
+like small requests, but they are important to our projects as they help ensure that the code is readable,
+maintainable, and consistent with the rest of the project. In other cases, the requested changes may be more
+significant. In either case, the maintainers will provide feedback to help you improve the code.
+
+Please keep in mind that partially complete pull requests will not be merged. Before merging, we will consider the
+following criteria:
+
+* Does the code follow the style guidelines of the project?
+* Does the change add value?
+* Is the code well commented?
+* Have documentation blocks been updated for new or modified components?
+* Will the changes create issues in other scenarios?
+* Have appropriate tests, including regression tests, been added or updated?
+
+Developers and maintainers will attempt to assist with challenging issues.
+
+### Code Style
+
+#### Code Style Guidelines
+We enforce consistent code style across our projects to improve readability and maintainability of the codebase.
+Here are some of the guidelines we follow:
+
+- Each file, with few exceptions, should end with an empty line.
+- In most cases, the maximum line length should not exceed 120 characters to make the code more readable.
+- We use [yamllint](https://yamllint.readthedocs.io) to lint our *yaml* files. You can find the configuration file
+  [here](https://github.com/LizardByte/.github/blob/master/.yamllint.yml) in our *.github* repository.
+- We use [CodeQL](https://codeql.github.com/) and [SonarCloud](https://sonarcloud.io/) to analyze our codebases.
+  There will be a comment on your PR indicating if there are any issues that need to be addressed.
+  Please address these issues if reasonable.
+  In some cases, there may be false positives, use your best judgment to determine if changes should be made.
+  These tools are not perfect and not meant to override engineering judgment.
+
+Want to address SonarCloud issues locally before committing?
+You can use the [SonarLint](https://www.sonarsource.com/products/sonarlint/) plugin for your IDE.
+
+### AI Usage
+AI tools and agents are welcome for brainstorming, implementation, debugging, refactoring, testing, documentation,
+and preparing PR descriptions. This includes substantial AI-assisted changes, provided they meet the same quality
+standards as any other contribution.
+
+#### Contributor Responsibilities
+You are responsible for all contributions submitted under your name, including work produced by an AI agent.
+Before submitting a PR:
+
+- Review the full diff and understand how the changes work. Be prepared to explain your implementation and decisions.
+- Verify the accuracy of generated code, documentation, and PR descriptions. Remove errors, invented claims, and
+  unrelated changes.
+- Follow the project's established patterns, conventions, and contribution guidelines.
+- Test the changes and add appropriate automated coverage, including regression tests as described below.
+- Report the validation you actually performed and any limitations, such as tests you could not run.
+
+Contributions that contain errors, do not solve the stated problem, or fail to meet our quality standards may be
+rejected regardless of how they were created.
+
+#### AI Disclosure
+Check the box in the PR template's AI Usage section if AI tools were used while preparing the PR. Leave it unchecked
+if no AI tools were used. You may optionally describe how AI helped.
+
+#### Issues and Community Posts
+Our [community rules](https://docs.lizardbyte.dev/latest/community/community_rules.html#ai-generated-content)
+prohibit AI-generated issues and posts. Use the standard issue template and describe the issue in your own words.
+
+### Testing
+Testing is a critical part of our development process, and we have automated tests and tools to ensure that our code
+meets the expected quality and functionality.
+
+#### Code Style Tests
+To ensure consistent code style, we run automated tests on pull requests. The tests that run depend on the language(s)
+of the repository. The following table shows the labels and the corresponding tests that will run:
+
+| Language                           | Checks                   |
+|------------------------------------|--------------------------|
+| `c`, `c++`                         | clang-format, cmake-lint |
+| `docker`                           | hadolint                 |
+| `github-action`, `github-workflow` | actionlint               |
+| `jupyter`, `python`                | flake8                   |
+| `PowerShell`                       | PSScriptAnalyzer         |
+| `rust`                             | rustfmt                  |
+| `shell`                            | shellcheck               |
+| `yaml`                             | yamllint                 |
+
+Projects may have additional checks, `eslint` for example, depending on the project's requirements.
+
+#### Unit Testing
+We strive to have comprehensive unit tests for our projects, but this is still a work in progress for some projects.
+We welcome contributions that improve test coverage and add new tests.
+
+Automated tests, including regression tests, are expected for most code changes. For bug fixes, add a regression test
+that reproduces the original issue, fails without the fix, and passes with it. For new or modified functionality,
+cover the intended behavior and relevant edge cases. Follow the project's existing test framework and conventions.
+PRs should not drastically reduce coverage percentages.
+
+Documentation-only changes and other changes without testable behavior may not need automated tests. If automated
+testing is impractical for your change, explain why in the PR and describe the manual validation you performed.
+Include the test commands and results in the PR's Testing section, along with any checks you could not run.
+
+Please reach out if you would like assistance writing tests.
+
+#### Python Projects
+All Python projects in the LizardByte organization use [uv](https://docs.astral.sh/uv/) for dependency management,
+Python environment setup, lock files, and command execution. A Python project's `pyproject.toml` and `uv.lock` files
+are the source of truth for its dependencies.
+
+Use the Python version declared by the project instead of assuming the same version across every repository. After
+changing Python dependencies or project metadata, update and commit the lock file with the related change.
+
+Common uv commands:
+
+```shell
+uv lock --check
+uv sync --frozen
+uv run --locked python -m pytest
+uv lock
+```
+
+Useful tips:
+
+* Use `uv lock --check` in validation to confirm the lock file still matches `pyproject.toml`.
+* Use `uv sync --frozen` in custom build or CI commands to install only from `uv.lock` without updating it.
+* Use native uv integrations for hosted services when available, and add a lockfile drift check when they cannot pass
+  `--frozen` directly.
+* Use `uv run --locked <command>` when you want to run a project command without changing `uv.lock`.
+* Use `uv sync --locked` locally when you want uv to fail if `uv.lock` is missing or out of date.
+* Use `uv lock` only when dependency inputs changed and the lock file should be updated.
+* Prefer project-specific commands from each repository's documentation when they exist.
+
+### Localization
+LizardByte projects are used by people all over the world. When feasible, we strive to make our projects
+multilingual. If you are able to contribute translations, we would be grateful for your help.
+
+#### CrowdIn
+The translations occur on [CrowdIn](https://translate.lizardbyte.dev).
+Anyone is free to contribute to the localization there. The project on CrowdIn is a mono-project, meaning that all
+translations are done in one place. This allows for easier management of translations across projects.
+
+##### Translation Basics
+* The brand name *LizardByte* and project names should never be translated.
+* Other brand names should never be translated. Examples include *AMD*, *Intel*, and *NVIDIA*.
+
+##### CrowdIn Integration
+How does it work?
+
+When a change is made to a project's source code, CrowdIn will automatically receive the updated strings.
+
+Once translations are updated on CrowdIn, a push gets made to the *l10n_master* branch and a PR is made against the
+*master* branch. Once the PR is merged, all updated translations are part of the project and will be included in the
+next release.
+
+#### Extraction
+The extraction process varies by project. Please consult the project's documentation for more information.
+
+#### CrowdIn Contributors
+Thank you to all the contributors who have helped with translations. Your contributions are greatly appreciated!
+
+<p align="center">
+  <a href="https://translate.lizardbyte.dev" aria-label="CrowdIn">
+    <img src='https://raw.githubusercontent.com/LizardByte/contributors/refs/heads/dist/crowdin.606145.svg'/>
+  </a>
+</p>
+
+### Legal
+We require that all contributors sign a Contributor License Agreement (CLA) before we can merge their pull requests.
+If any action is required, a bot will comment on your PR with instructions.
+Exempt repositories are listed below.
+
+- beautiful-jekyll-next
+- build-deps
+- contribkit
+- pacman-repo-builder
+- Sunshine
+- tray
+- Virtual-Gamepad-Emulation-Bus
+- Virtual-Gamepad-Emulation-dotnet
+- Virtual-Gamepad-Emulation-Client
+
+We offer two types of CLAs:
+
+* [CLA for individuals](https://github.com/lizardbyte/.github/blob/master/legal/cla/CLA)
+* [CLA for entities](https://github.com/lizardbyte/.github/blob/master/legal/cla/CLA-entity)
+
+If you do not own the Copyright in the entire work of authorship submitted, you must complete the following steps:
+
+1. Add the owner(s) as a *co-author* to a commit in the PR. See
+   [Creating a commit with multiple authors](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors).
+2. All authors must sign the CLA before it can be merged.
+
+If you are an entity, you cannot sign the CLA through CLA-assistant. You must sign the CLA for entities. Please contact
+LizardByte for more information.
