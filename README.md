@@ -15,3 +15,17 @@ a project organization under [LizardByte](https://github.com/LizardByte).
 
 This organization hosts Themerr, ThemerrDB, and the archived Themerr-jellyfin and Themerr-kodi integrations.
 See the [organization profile](profile/README.md) for repositories and project links.
+
+---
+
+<p align="center">
+  <a href="https://app.lizardbyte.dev/">
+    <img
+      src="https://raw.githubusercontent.com/LizardByte/.github/refs/heads/master/branding/logos/logo.svg"
+      alt="LizardByte logo"
+      width="64"
+    />
+  </a>
+  <br />
+  <sub>Part of <a href="https://app.lizardbyte.dev/">LizardByte</a></sub>
+</p>
