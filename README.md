@@ -21,15 +21,13 @@ See the [organization profile](profile/README.md) for repositories and project l
 <div align="center">
   <p>
     A&nbsp;
-    <a href="https://app.lizardbyte.dev/">
-      <img
+    <a href="https://app.lizardbyte.dev/"><img
         src="https://raw.githubusercontent.com/LizardByte/.github/refs/heads/master/branding/logos/logo-wordmark-horizontal.svg"
         alt="LizardByte"
         width="132"
         height="32"
         align="middle"
-      />
-    </a>
+    /></a>
     &nbsp;project
   </p>
   <p>
