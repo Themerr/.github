@@ -1,30 +1,54 @@
-# Themerr
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/Themerr/Themerr/refs/heads/master/web/images/icon-default.png"
+    alt="Themerr icon"
+    width="256"
+  />
+  <h1 align="center">Themerr</h1>
+  <h4 align="center">Theme song projects for Plex and Jellyfin.</h4>
+</div>
 
-Themerr is the planned GitHub home for LizardByte's theme song projects, including the unified **Themerr**
-application for Plex and Jellyfin and the community-maintained **ThemerrDB** database.
+Themerr is the GitHub home for LizardByte's theme song projects, including the **Themerr** application for
+Plex and Jellyfin and the community-maintained **ThemerrDB** database.
 It is a project organization under [LizardByte](https://github.com/LizardByte), with the same shared community.
 
-## Coming to this organization
+## Projects
 
-These repositories will move from LizardByte into the Themerr organization:
+| Repository                                                      | Purpose                                  | Status   |
+| --------------------------------------------------------------- | ---------------------------------------- | -------- |
+| [Themerr](https://github.com/Themerr/Themerr)                   | Theme song manager for Plex and Jellyfin | Active   |
+| [ThemerrDB](https://github.com/Themerr/ThemerrDB)               | Theme song database                      | Active   |
+| [Themerr-jellyfin](https://github.com/Themerr/Themerr-jellyfin) | Previous Jellyfin plugin                 | Archived |
+| [Themerr-kodi](https://github.com/Themerr/Themerr-kodi)         | Kodi add-on                              | Archived |
 
-| Current repository                                                 | Purpose                                  | Status   |
-| ------------------------------------------------------------------ | ---------------------------------------- | -------- |
-| [Themerr](https://github.com/LizardByte/Themerr)                   | Theme song manager for Plex and Jellyfin | Active   |
-| [ThemerrDB](https://github.com/LizardByte/ThemerrDB)               | Theme song database                      | Active   |
-| [Themerr-jellyfin](https://github.com/LizardByte/Themerr-jellyfin) | Previous Jellyfin plugin                 | Archived |
-| [Themerr-kodi](https://github.com/LizardByte/Themerr-kodi)         | Kodi add-on                              | Archived |
+Plex and Jellyfin users should use Themerr for new installations. Themerr-jellyfin and Themerr-kodi are archived.
 
-Until each transfer is complete, use its current repository. The two archived integrations will remain archived;
-Plex and Jellyfin users should use the unified Themerr application for new installations.
+## Get started
 
-The planned project website is `themerr.lizardbyte.dev`. ThemerrDB's data address will change as part of the
-website move, and Themerr users will need an updated release when that change goes live. Release notes will
-explain when to upgrade.
+- [Themerr website](https://themerr.lizardbyte.dev/)
+- [Download Themerr](https://github.com/Themerr/Themerr/releases)
+- [Themerr documentation](https://docs.lizardbyte.dev/projects/themerr/latest/)
+- [Browse ThemerrDB](https://themerr.lizardbyte.dev/ThemerrDB/)
 
-## Stay connected
+---
 
-- [Current Themerr releases](https://github.com/LizardByte/Themerr/releases)
-- [Current ThemerrDB website](https://app.lizardbyte.dev/ThemerrDB/)
-- [LizardByte website](https://app.lizardbyte.dev/)
-- [Support and community](https://app.lizardbyte.dev/support)
+<div align="center">
+  <p>
+    A&nbsp;
+    <sup><a href="https://app.lizardbyte.dev/"><img
+        src="https://raw.githubusercontent.com/LizardByte/.github/refs/heads/master/branding/logos/logo-wordmark-horizontal.svg"
+        alt="LizardByte"
+        width="132"
+        height="32"
+        align="middle"
+    /></a></sup>
+    &nbsp;project
+  </p>
+  <p>
+    <sub>
+      <a href="https://app.lizardbyte.dev/">Explore Projects</a>
+      &nbsp;·&nbsp;
+      <a href="https://app.lizardbyte.dev/support">Get Support</a>
+    </sub>
+  </p>
+</div>
