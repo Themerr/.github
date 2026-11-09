@@ -30,21 +30,27 @@ Plex and Jellyfin users should use Themerr for new installations. Themerr-jellyf
 - [Themerr documentation](https://docs.lizardbyte.dev/projects/themerr/latest/)
 - [Browse ThemerrDB](https://themerr.lizardbyte.dev/ThemerrDB/)
 
-## Stay connected
-
-- [LizardByte website](https://app.lizardbyte.dev/)
-- [Support and community](https://app.lizardbyte.dev/support)
-
 ---
 
-<p align="center">
-  <a href="https://app.lizardbyte.dev/">
-    <img
-      src="https://raw.githubusercontent.com/LizardByte/.github/refs/heads/master/branding/logos/logo.svg"
-      alt="LizardByte logo"
-      width="64"
-    />
-  </a>
-  <br />
-  <sub>Part of <a href="https://app.lizardbyte.dev/">LizardByte</a></sub>
-</p>
+<div align="center">
+  <p>
+    A&nbsp;
+    <a href="https://app.lizardbyte.dev/">
+      <img
+        src="https://raw.githubusercontent.com/LizardByte/.github/refs/heads/master/branding/logos/logo-wordmark-horizontal.svg"
+        alt="LizardByte"
+        width="132"
+        height="32"
+        align="middle"
+      />
+    </a>
+    &nbsp;project
+  </p>
+  <p>
+    <sub>
+      <a href="https://app.lizardbyte.dev/">Explore Projects</a>
+      &nbsp;·&nbsp;
+      <a href="https://app.lizardbyte.dev/support">Get Support</a>
+    </sub>
+  </p>
+</div>
